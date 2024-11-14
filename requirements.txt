@@ -1,3 +1,4 @@
 folium>=0.18.0
 geopy>=2.4.1
 streamlit_folium>=0.23.1
+haversine>=2.8.1
