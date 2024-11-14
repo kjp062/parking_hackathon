@@ -13,6 +13,9 @@ parkingDict = parkingApiResponse.json()
 #print(parkingObject)
 
 #pp.pprint(parkingDict.keys())
+def get_parking_data():
+    parkingDf = pd.DataFrame(parkingDict['data'])
+    return parkingDf
 
-parkingDf = pd.DataFrame(parkingDict['data'])
-print(parkingDf)
+if __name__ == "__main__":
+    print(get_parking_data())
