@@ -11,6 +11,7 @@ st.set_page_config(layout="wide")
 st.title("Code the Curb Hackathon")
 
 address = st.text_input("Enter your destination address", value = "Northside Social")
+address = address + " Arlington VA"
 
 geolocator = Nominatim(user_agent="ParkingSpotFinder_Hackathon")
 location = geolocator.geocode(address)
